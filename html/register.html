@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+    <title>register</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row boxx">
+            <div class="col-6 mt-5">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <input type="text" id="f_name" class="form-control" placeholder="Enter a First Name">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <input type="text" id="l_name" class="form-control" placeholder="Enter a Last  Name">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input id="date" type="date">
+                    </div>
+
+
+
+                    <div class="form-group ">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+
+                            <option selected>Ahemedabad</option>
+                            <option>Mumbai</option>
+                            <option>Surat</option>
+                        </select>
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+
+                        Male <input type="radio"  name="gender" value="male">
+                        Female <input type="radio" name="gender" value="female">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <textarea class="form-control" name="" id="text_area" cols="30" rows="10"></textarea>
+                    </div>
+
+
+
+                    <button class="btn" id="save_btn"> save </button>
+
+
+                </form>
+
+            </div>
+
+
+
+
+            <div class="col-6">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">DOB</th>
+                            <th scope="col">state</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Address</th>
+                        </tr>
+                    </thead>
+                    <tbody id="t_body">
+                        <tr>
+                          
+                        </tr>
+                        <tr>
+                           
+                        </tr>
+                        <tr>
+                        
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+   
+    
+
+
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

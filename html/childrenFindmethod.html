@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+    <title>children_find</title>
+
+    <style>
+        .container {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        
+        .container .main {
+            border: 1px solid red;
+            padding: 10px;
+        }
+        
+        .container .main .main_child {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        
+        .container .main_second {
+            border: 1px solid chocolate;
+            padding: 10px;
+        }
+        
+        .container .main_littel_child {
+            border: 1px solid chocolate;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>container</h3>
+        <div class="main">
+            <h3>main</h3>
+            <div class="main_child">
+                <h3>main_child</h3>
+                <ul>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <ul>
+            </div>
+
+            <div class="main_littel_child">
+                <h3>main_child</h3>
+                <ul class="unorder">
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <ul>
+            </div>
+        </div>
+
+        <div class="main_second">
+            <h3>main_second</h3>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="../jquery/childrenfindmethod.js"></script>
+
+
+
+
+
+</body>
+
+</html>

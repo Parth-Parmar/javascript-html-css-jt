@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="product_name">Product</label>
+                    <input type="text" class="form-control" id="product_name" placeholder="enter product name">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="Price">Price</label>
+                    <input type="text" class="form-control" id="product_price" data-price="unique" placeholder="enter product Price">
+                </div>
+            </div>
+            <button type="submit" id="add_product" class="btn btn-primary">Add Product</button>
+        </form>
+
+
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped mt-4">
+                    <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="display_table">
+
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>
+                                <strong>TOTAL = ₹  <span id="total1"  class="total">0</span>
+                         </strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="../js/add_product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+
+<body>
+
+    <input type="text" value="0" disabled id="text"><br><br>
+    <input type="button" value="Generate" id="increment_btn">
+
+    <script>
+        "use strict"
+        var a = document.getElementById("increment_btn")
+        var t_text = document.getElementById("text")
+            // console.log(a)
+
+        var globle = 0
+        var cou = 0
+        var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+        function abc() {
+            var interval = setInterval(function() {
+                t_text.value = Math.floor(Math.random() * alphabet)
+                cou++
+            }, 2000)
+
+            var second = setInterval(function() {
+                    if (globle == 120) {
+                        globle = 0
+                        console.log(cou)
+                        clearInterval(second)
+                        clearInterval(interval)
+                    }
+                    globle++
+                }, 1000)
+                //clearInterval(interval)
+        }
+        a.addEventListener("click", abc)
+    </script>
+</body>
+
+</html>

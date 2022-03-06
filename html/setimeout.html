@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+<script>
+    var colour = ["blue", "red", "green", "black"]
+
+
+    let time = setTimeout(function() {
+        var tt = document.getElementsByTagName('body')
+
+        let index = Math.floor(Math.random() * colour.length)
+
+        tt[0].style.background = colour[index]
+
+        clearTimeout(time)
+    }, 3000);
+
+
+
+    // aaa()
+
+    // function aaa() {
+    //     console.log('asdhuasd')
+    // }
+
+    // let mytimeout = setTimeout(function() {
+    //     aaa()
+    //     clearTimeout(mytimeout)
+    // }, 5000);
+
+
+    // let counter = 1
+    // let myintercval = setInterval(function() {
+    //     aaa()
+    //     if (counter == 5) {
+    //         clearInterval(myintercval)
+    //     }
+    //     counter++
+    // }, 1000);
+</script>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="date" id="startDate" />
+        <input type="date" id="endDate" />
+        <input type="button" value="Enter" id="execute">
+    </form>
+</body>
+
+</html>
+
+<script>
+    // Var can be decalare anytime and also update anu where within page and same variable can redeclare
+
+    // Let same varaible cannot be declare and but can change or update value and also redeclare on any block (conditon,function,etc..)
+
+    //  Dom Object
+    let startDate = document.getElementById('startDate')
+        //  Dom Object
+    let endDate = document.getElementById('endDate')
+        //  Dom Object
+    let execute = document.getElementById('execute')
+
+    execute.addEventListener('click', executeBtn)
+
+    function executeBtn(e) {
+        e.preventDefault()
+        let startDateValue = startDate.value
+        let endDateValue = endDate.value
+
+        // let splitedStartDate = startDateValue.split("-")
+        // let splitedStartDateVal = parseInt(splitedStartDate[splitedStartDate.length - 1])
+
+        // ==========================================
+        let StatedateObject = new Date(startDateValue)
+        let EndDateObject = new Date(endDateValue)
+
+        let StatedateObjectVal = StatedateObject.getDate()
+        let EnddateObjectVal = EndDateObject.getDate()
+            // ==========================================
+        for (let i = StatedateObjectVal; i <= EnddateObjectVal; i++) {
+            if (i == 1 || i == 21 || i == 31) {
+                console.log(`${i}st`)
+            } else if (i == 2 || i == 22) {
+                console.log(`${i}nd`)
+            } else if (i == 3 || i == 23) {
+                console.log(`${i}rd`)
+            } else {
+                console.log(`${i}th`)
+            }
+            // if (i == 1) {
+            //     console.log(`${i}st`)
+            // } else if (i == 2) {
+            //     console.log(`${i}nd`)
+            // } else if (i == 3) {
+            //     console.log(`${i}rd`)
+            // } else if (i >= 4 && i <= 20) {
+            //     console.log(`${i}th`)
+            // } else if (i >= 21) {
+            //     let tempDate = i.toString()
+            //     if (tempDate.length == 2) {
+            //         let lastIndexStringVal = tempDate[1]
+            //         if (lastIndexStringVal == 1) {
+            //             console.log(`${i}st`)
+            //         } else if (lastIndexStringVal == 2) {
+            //             console.log(`${i}nd`)
+            //         } else if (lastIndexStringVal == 3) {
+            //             console.log(`${i}rd`)
+            //         } else {
+            //             console.log(`${i}th`)
+            //         }
+            //     }
+            // }
+        }
+        // 1 - 30
+        // 1 2 3 4 - 20 21st 22nd 23rd 24th 30th 31st 
+    }
+</script>

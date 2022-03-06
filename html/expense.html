@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+    <title>expense calculator</title>
+
+
+    <style>
+        form.box {
+            box-shadow: 1px -2px 19px -7px;
+            padding: 17px;
+            border-radius: 20px;
+        }
+
+        .toogle {
+            text-decoration: line-through;
+        }
+
+        .toogle-remove {
+            text-decoration: non;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+
+                <form>
+
+                    <input class="form-control" type="number" id="rs" placeholder="enter a total Rs"><br><br>
+                    <input class="form-control" type="number" id="people"
+                        placeholder="enter a number of people"><br><br>
+                    <input class="form-control" type="text" id="op" disabled value="0"><br><br>
+
+
+                    <input class="form-control" type="button" id="okay" value="submit">
+
+                </form>
+
+
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto pt-5">
+                <form class="box" enctype="multipart/form-data">
+
+                    <h3 class="text-center pt-4">Expense Calculator</h3>
+
+
+                    <div class="inputsss pt-5">
+                        <div class="enteratext">
+                            <input type="number" id="rs" class="form-control" placeholder="Enter a Rs">
+                        </div><br>
+                        <div class="enteranumber">
+                            <input type="number" id="people" class="form-control" placeholder="Enter a People">
+                        </div><br>
+                        <div class="output">
+                            <input type="number" id="op" disabled value="0" class="form-control">
+                        </div><br>
+                        <div class="text-center">
+                            <button type="submit" id="okay" class=" btn btn-success">submit</button>
+                        </div><br>
+                        <input type="checkbox" data-target="ironmanRef" name="charcter" id="IronMan" value="IronMan" />
+                        <label id="ironmanRef">Iron Man</label>
+
+                        <br /><input type="checkbox" data-target="caRef" name="charcter" id="CaptainAmerica"
+                            value="CaptainAmerica" /><label id="caRef">Captain
+                            America</label>
+                        <br /><input type="checkbox" data-target="vRef" name="charcter" id="Vison"
+                            value="Vison" /><label id="vRef">Vison</label>
+                        <br /><input type="checkbox" data-target="nRef" name="charcter" id="NatashaRamnoff"
+                            value="NatashaRamnoff" /><label id="nRef">Natasha</label>
+                    </div>
+
+                    <input type="file" id="file" accept="image/*" multiple />
+                    
+                </form>
+                <div id="multipleImage">
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <input type="button" id="clear_all" value="clear"> -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="static/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="static/js/popper.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+
+
+
+
+        <script src="../js/expens.js"></script>
+</body>
+
+</html>

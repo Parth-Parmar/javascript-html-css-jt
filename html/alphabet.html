@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+</head>
+
+<body>
+    <div class="timer" id="timer_display"></div>
+    <div class="display" style="text-align: center;font-size: 220px;" id="display"></div>
+    <div class="score" id="score"></div>
+</body>
+
+
+
+
+<script>
+    "use strict"
+
+    var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    var display = document.getElementById("display")
+    var timer_display = document.getElementById("timer_display")
+    var score = document.getElementById("score")
+
+    var scoreval = 0
+    var timer = 40
+    var xyz = ""
+
+    document.addEventListener('keypress', function(e) {
+        if (e.key == xyz) {
+            scoreval++
+        }
+        score.innerHTML = scoreval
+    })
+
+    function random_no_alpha() {
+
+        xyz = alphabet[Math.floor(Math.random() * alphabet.length)]
+        display.innerHTML = xyz
+
+    }
+
+    var interval = setInterval(function() {
+        random_no_alpha()
+
+    }, 2000)
+
+    var timerrr = setInterval(function() {
+        console.log(timer)
+        if (timer == 0) {
+            clearInterval(interval)
+            clearInterval(timerrr)
+
+        } else {
+
+            timer_display.innerHTML = timer
+        }
+        timer--
+
+    }, 1000)
+</script>
+
+</html>
