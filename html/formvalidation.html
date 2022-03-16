@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+    <title>Form Validation</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: beige;
+        }
+        
+        .container .form-class {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container .form-class form {
+            box-shadow: 1px 1px 15px 0px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            padding: 10px;
+            height: auto;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+
+                <div class="form-class">
+
+
+
+
+                    <form>
+                        <h3 class="text-center">Form Validation</h3>
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Enter a Name" id="name">
+                            <span class='error_text' id='name_error'></span>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input type="tel" minlength="10" maxlength="10" class="form-control" placeholder="Enter a Phone No" id="phone" name="phone">
+                            <span class='error_text' id='phone_error'></span>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" placeholder="Enter a Email" id="email">
+                            <span class='error_text' id='email_error'></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" name="Gender" value="m" id="male"> male
+                            <input type="radio" name="Gender" value="f" id="female"> Female
+                            <span class='error_text' id='Gender_error'></span>
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="check_box">
+                            <span class='error_text' id='check_error'></span>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <button class="btn btn-success">submit</button>
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="../jquery/formvalidation.js"></script>
+</body>
+
+</html>

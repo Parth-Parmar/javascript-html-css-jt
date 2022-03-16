@@ -9,14 +9,13 @@ var counter = 0
 var add_task
 var update_i = -1
 var add_coun = []
-//console.log(e_t,a_t,d_t,t)
+    //console.log(e_t,a_t,d_t,t)
 add_text.addEventListener("click", add_item)
 
 
 function add_item() {
     add_task = enter_text.value
-    // add_coun.push(add_task)
-
+        // add_coun.push(add_task)
     if (update_i < 0) {
         if (enter_text.value == "") {
 
@@ -29,12 +28,9 @@ function add_item() {
         add_coun[update_i] = add_task
         update_i = -1
     }
-
-
-
     list_todoitem();
     console.log(add_coun)
-    //  t.innerHTML += `<div class="col-3"><p>${add_task}</p></div>`
+        //  t.innerHTML += `<div class="col-3"><p>${add_task}</p></div>`
 
 
     //     table_op.innerHTML += ` 
@@ -74,7 +70,7 @@ function Edit_task(id) {
     // list_todoitem()
     enter_text.value = add_coun[id]
     update_i = id
-    console.log(enter_text.value, id)
+        //console.log(enter_text.value, id)
 
 }
 edit_t.addEventListener("click", Edit_task)

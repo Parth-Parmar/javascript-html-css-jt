@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+    <title>Register_Login_Form</title>
+
+    <style>
+        .login_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login_form form {
+            box-shadow: 1px 2px 3px 1px gray;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .register_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .register_form form {
+            box-shadow: 1px 2px 3px 1px gray;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        h3 {
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <h3 class="text-center">Registration form</h3>
+                <div class="register_form">
+                    <form>
+                        <div class="form-group">
+                            <label for="f_name">First Name</label>
+                            <input class="form-control" type="text" id="f_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="l_name">Last Name</label>
+                            <input class="form-control" type="text" id="l_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="t_name">Phone</label>
+                            <input class="form-control" type="tel" minlength="10" maxlength="10" id="t_name">
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="radio" id="male_id" name="gender" value="Male"> Male
+                            <input type="radio" id="fmale_id" name="gender" value="Female"> Female
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="e_name">Email</label>
+                            <input class="form-control" type="email" id="e_name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="p_name">Password</label>
+                            <input class="form-control" type="password" id="p_name">
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button class="btn btn-success" id="submit">Submit</button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-6">
+                <h3 class="text-center">Login Form</h3>
+                <div class="login_form">
+
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form3Example3">User Name</label>
+                            <input type="text" id="u_id" class="form-control" placeholder="Enter a Valid User Name">
+
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-3">
+                            <label class="form-label" for="form3Example4">Password</label>
+                            <input type="password" id="pl_id" class="form-control" placeholder="Enter password">
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-0">
+                                <label class="form-check-label" for="form2Example3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3">
+                              Remember me
+                            </label>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" class=" login btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="../jquery/Register_login.js"></script>
+</body>
+
+</html>
