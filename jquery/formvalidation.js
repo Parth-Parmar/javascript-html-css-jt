@@ -41,8 +41,6 @@ $(".btn").click(function(e) {
 
 
 
-
-
     var ckb_status = $("#check_box").prop('checked');
     if (ckb_status) {
 

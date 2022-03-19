@@ -2,7 +2,7 @@
 
 
 $(document).ready(function() {
-    function setDataUser(userinfo) {
+    function setDatsaUser(uerinfo) {
         $.each(userinfo, function(key, value) {
 
 

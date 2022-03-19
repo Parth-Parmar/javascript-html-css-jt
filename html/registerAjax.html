@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+
+
+    <title>Register_Login_Form</title>
+
+    <style>
+        /* .login_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        
+        .login_form form {
+            box-shadow: 1px 2px 3px 1px gray;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        /*         
+        .register_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        
+        .register_form form {
+            box-shadow: 1px 2px 3px 1px gray;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .register_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <div class="div_head">
+                    <h3 class="text-center">Registration form</h3>
+
+                </div>
+
+
+                <div class="register_form">
+                    <form>
+                        <div class="form-group">
+                            <label for="f_name">First Name</label>
+                            <input class="form-control" type="text" id="f_name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="e_name">Email</label>
+                            <input class="form-control" type="email" id="e_name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" id="male_id" name="gender" value="Male"> Male
+                            <input type="radio" id="fmale_id" name="gender" value="Female"> Female
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="status"></label>
+                            <select name="status" id="status">
+                             <option value="active">Active</option>
+                             <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button class="btn btn-primary" type="button" id="submit">
+                                Submit
+                              </button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-6">
+
+
+                <table class="table-striped mt-4 ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                        <thead>
+
+                            <tbody class="table_body">
+
+                            </tbody>
+
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="../jquery/registerAjax.js"></script>
+</body>
+
+</html>

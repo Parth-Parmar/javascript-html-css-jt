@@ -1,9 +1,7 @@
  "user strict"
 
  $(document).ready(function() {
-
      function setDataUser(data) {
-
          $.each(data, function(key, value) {
 
              $("tbody.table_body").append(`<tr>
@@ -18,12 +16,17 @@
 
      $(".btn").click(function() {
 
+         $("tbody.table_body").html("")
+
+
+
+
          try {
 
              $.ajax({
 
                  url: "https://gorest.co.in/public/v2/users",
-                 type: "get",
+                 type: "get ",
                  dataType: "json",
                  success: function(response) {
                      data = response

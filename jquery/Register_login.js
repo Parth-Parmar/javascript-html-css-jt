@@ -1,6 +1,15 @@
 "use strict"
 
+let user_main_info = localStorage.getItem("Data_user")
+let userinfoParse = JSON.parse(user_main_info)
+
 let Data_user = []
+if (userinfoParse == null) {
+
+    Data_user = []
+} else {
+    Data_user = userinfoParse
+}
 
 $("#submit").click(function(e) {
     e.preventDefault()
